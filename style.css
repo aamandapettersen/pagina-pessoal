@@ -10,7 +10,7 @@ body {
 /* Títulos Gerais */
 h2 {
     font-size: 2rem;
-    text-align: center;
+    text-align: left; /* Alinha à esquerda */
     margin-bottom: 30px;
     color: #ffffff; /* Cor branca para os títulos */
     border-bottom: 2px solid #ff6392; /* Linha rosa para destaque */
@@ -49,10 +49,11 @@ header {
 }
 
 .foto-grande {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 100%; /* Ocupa a largura disponível */
+    max-width: 300px; /* Define um tamanho máximo para a foto */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    border-radius: 50%; /* Mantém a borda arredondada */
+    object-fit: cover; /* Garante que a foto cubra a área sem distorção */
 }
 
 .header-text {
@@ -95,19 +96,26 @@ header {
     line-height: 1.6;
 }
 
+/* Título "Habilidades" */
+.skills h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: left; /* Alinha à esquerda */
+    color: #ffffff; /* Cor branca */
+    width: 100%; /* Garante que o título ocupe toda a largura disponível */
+    border-bottom: 2px solid #ff6392; /* Linha rosa para destaque */
+}
+
+/* Título no cabeçalho "Desenvolvedora de Software" em rosa */
+.header-text p:first-child {
+    color: #ff6392; /* Tom de rosa */
+}
+
 /* Habilidades */
 .skills {
     display: flex;
     justify-content: space-between; /* Alinha as colunas lado a lado */
     gap: 20px;
-}
-
-.skills h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #ff6392;
-    width: 100%; /* Garante que o título ocupe toda a largura disponível */
 }
 
 .technical-skills, .soft-skills {
