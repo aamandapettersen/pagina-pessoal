@@ -39,11 +39,11 @@ header {
 }
 
 .foto-grande {
-    width: 300px; /* Define um tamanho fixo para a largura */
-    height: 300px; /* Define o mesmo tamanho para a altura */
-    border-radius: 50%; /* Borda arredondada */
-    object-fit: cover; /* Ajusta a imagem para preencher o quadrado sem distorção */
-    margin-bottom: 20px; /* Espaço inferior para separar a foto do texto */
+    width: 300px; /* Definindo um valor fixo para largura */
+    height: 300px; /* Igualando a altura à largura para tornar a foto quadrada */
+    border-radius: 8px; /* Mantendo as bordas arredondadas */
+    object-fit: cover; /* Ajusta a imagem para preencher o quadrado sem distorcer */
+    margin-bottom: 20px;
 }
 
 .header-text {
@@ -56,8 +56,8 @@ header {
 }
 
 /* Subtítulo "Desenvolvedora de Software | Análise e Desenvolvimento de Sistemas" em rosa */
-.header-text p {
-    color: #ff6392; /* Cor rosa para o subtítulo */
+.header-text p:first-child {
+    color: #ff6392; /* Cor rosa */
     font-size: 1.2rem; /* Ajustando o tamanho da fonte do subtítulo */
     font-weight: bold; /* Para dar um destaque maior */
 }
