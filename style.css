@@ -65,7 +65,8 @@ header {
     margin-bottom: 10px;
 }
 
-.header-text p:first-child {
+/* Subtítulo "Desenvolvedora de Software | Análise e Desenvolvimento de Sistemas" em rosa */
+.header-text p {
     color: #ff6392; /* Cor rosa para o subtítulo */
     font-size: 1.2rem; /* Ajustando o tamanho da fonte do subtítulo */
     font-weight: bold; /* Para dar um destaque maior */
