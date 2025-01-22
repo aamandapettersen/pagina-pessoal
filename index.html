@@ -4,132 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Amanda Petersen - Portfólio</title>
-    <!-- Link para Google Fonts -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <!-- Link para Font Awesome -->
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
-        /* Estilo geral */
         body {
+            background-color: #261329;
+            color: #fff;
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #261329;
-            color: #fff;
         }
 
         header {
-            padding: 20px;
-            background-color: #4f5d73;
-            text-align: center;
-            color: #fff;
-        }
-
-        .header-content {
             display: flex;
             align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
+            padding: 20px;
         }
 
         .foto-grande {
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
             margin-right: 20px;
         }
 
-        .header-text {
-            text-align: left;
-        }
-
-        nav {
-            background-color: #4f5d73;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 10px 0;
-        }
-
-        nav a {
+        .header-text h1 {
             color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin: 0 15px;
+            margin: 0;
         }
 
-        nav a:hover {
-            color: #f06292;
-        }
-
-        h2 {
-            font-size: 2em;
-            color: #fff;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            color: #f06292;
+        .header-text p {
+            margin: 5px 0;
+            color: #f08dac;
         }
 
         section {
-            padding: 60px 20px;
-        }
-
-        .experience, .skills, .contact {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #4f5d73;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
-        .experience-card {
-            margin-bottom: 20px;
+        h2 {
+            color: #fff;
+            border-bottom: 2px solid #f08dac;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .experience-card,
+        .skill-card {
+            background-color: #3b2040;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .skills {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .technical-skills,
+        .soft-skills {
+            flex: 1;
         }
 
         .skill-item {
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
+            margin: 10px 0;
         }
 
         .skill-item i {
-            font-size: 1.5em;
-            color: #f06292;
             margin-right: 10px;
+            color: #f08dac;
+            font-size: 1.5em;
         }
 
-        .soft-skills ul {
-            list-style: disc;
+        ul {
+            list-style-type: disc;
             padding-left: 20px;
-        }
-
-        .soft-skills li {
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #4f5d73;
-            text-align: center;
-            color: #fff;
-            padding: 20px;
-        }
-
-        a {
-            color: #f06292;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
@@ -179,26 +136,63 @@
     </section>
 
     <!-- Habilidades -->
-    <section id="skills" class="skills">
-        <h2>Habilidades</h2>
-        <div class="technical-skills">
-            <h3>Habilidades Técnicas</h3>
-            <div class="skill-item">
-                <i class="fab fa-python"></i>
-                <span>Programação em Python</span>
-            </div>
-            <!-- Outros itens técnicos aqui -->
-        </div>
+   <section class="skills">
+    <h2>Habilidades</h2>
 
-        <div class="soft-skills">
-            <h3>Habilidades Comportamentais</h3>
-            <ul>
-                <li>Compromisso com aprendizado contínuo e inovação.</li>
-                <li>Facilidade para trabalhar em equipe e enfrentar desafios com visão estratégica.</li>
-            </ul>
+    <div class="technical-skills">
+        <h3>Habilidades Técnicas</h3>
+        <div class="skill-item">
+            <i class="fab fa-python" title="Python"></i>
+            <span>Programação em Python</span>
         </div>
-    </section>
+        <div class="skill-item">
+            <i class="fab fa-php" title="PHP"></i>
+            <span>Programação em PHP</span>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-database" title="PostgreSQL"></i>
+            <span>Bancos de Dados Relacionais: PostgreSQL</span>
+        </div>
+        <div class="skill-item">
+            <i class="fab fa-html5" title="HTML5"></i>
+            <i class="fab fa-css3-alt" title="CSS3"></i>
+            <i class="fab fa-js" title="JavaScript"></i>
+            <span>HTML5, CSS3 e JavaScript</span>
+        </div>
+        <div class="skill-item">
+            <i class="fab fa-react" title="React"></i>
+            <i class="fab fa-vuejs" title="Vue.js"></i>
+            <span>Frameworks: React e Vue.js</span>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-mobile-alt" title="Design Responsivo"></i>
+            <span>Design Responsivo e Integração de APIs</span>
+        </div>
+        <div class="skill-item">
+            <i class="fab fa-git-alt" title="Git"></i>
+            <span>Versionamento de Código com Git</span>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-cloud" title="Serviços em Nuvem"></i>
+            <span>Familiaridade com AWS e Google Cloud</span>
+        </div>
+        <div class="skill-item">
+            <i class="fas fa-tasks" title="Metodologias Ágeis"></i>
+            <span>Metodologias Ágeis (Scrum e Kanban)</span>
+        </div>
+    </div>
 
+    <div class="soft-skills">
+        <h3>Habilidades Comportamentais</h3>
+        <ul>
+            <li>Compromisso com aprendizado contínuo e inovação.</li>
+            <li>Facilidade para trabalhar em equipe e enfrentar desafios com visão estratégica.</li>
+            <li>Capacidade de desenvolver soluções práticas e eficientes, alinhadas aos objetivos organizacionais.</li>
+            <li>Organização e planejamento de processos.</li>
+            <li>Pacote Office Intermediário.</li>
+        </ul>
+    </div>
+</section>
     <!-- Contato -->
     <section id="contact" class="contact">
         <h2>Contato</h2>
