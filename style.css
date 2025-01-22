@@ -50,18 +50,18 @@ header {
     flex: 1;
 }
 
-.header-text h1 {
-    font-size: 4rem; /* Aumentando o tamanho da fonte do título */
+h1 {
+    font-size: 3rem; /* Ajuste para harmonizar com subtítulos */
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 /* Subtítulo "Desenvolvedora de Software | Análise e Desenvolvimento de Sistemas" em rosa */
 .header-text p {
-    color: #ff6392 !important; /* Cor rosa */
-    font-size: 1.2rem; /* Ajustando o tamanho da fonte do subtítulo */
-    font-weight: bold; /* Para dar um destaque maior */
+    font-size: 1.5rem; /* Um pouco menor que o título principal */
+    font-weight: bold;
+    color: #ff6392;
 }
-
 .header-text .about-me {
     font-size: 1rem;
     margin-top: 15px;
@@ -88,13 +88,22 @@ header {
 }
 
 /* Título "Habilidades" */
-.skills h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    text-align: left; /* Alinha à esquerda */
-    color: #ffffff; /* Cor branca */
-    width: 100%; /* Garante que o título ocupe toda a largura disponível */
-    border-bottom: 2px solid #ff6392; /* Linha rosa para destaque */
+h2 {
+    font-size: 2rem; /* Tamanho consistente para subtítulos */
+    color: #ffffff;
+    text-align: left;
+    border-bottom: 2px solid #ff6392;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    margin: 0 auto; /* Centraliza, se necessário */
+}
+
+.skills h2, .experience h2 {
+    font-size: 2rem; /* Garante o mesmo tamanho */
 }
 
 /* Habilidades */
