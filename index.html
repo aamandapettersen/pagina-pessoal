@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amanda Petersen - Portfólio</title>
+    <!-- Link para Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Link para Font Awesome (para os ícones) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilo geral */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4f5d73;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        header .contact-info {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        /* Sobre mim */
+        .about {
+            padding: 50px;
+            background-color: #fff;
+            margin-top: -20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .about .emoji {
+            font-size: 1.5em;
+            margin-left: 10px;
+        }
+
+        /* Experiência Profissional */
+        .experience {
+            padding: 50px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .experience h2 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+
+        .experience-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            display: inline-block;
+            width: calc(33.33% - 40px);
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        .experience-card h3 {
+            font-size: 1.8em;
+            color: #4f5d73;
+            margin-bottom: 10px;
+        }
+
+        .experience-card p {
+            font-size: 1.1em;
+            color: #777;
+        }
+
+        /* Habilidades */
+        .skills {
+            padding: 50px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .skills h2 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+
+        .skills i {
+            font-size: 40px;
+            color: #4f5d73;
+            margin: 15px;
+            transition: transform 0.3s;
+        }
+
+        .skills i:hover {
+            transform: scale(1.2);
+        }
+
+        /* Barra de progresso */
+        .progress-bar {
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            background-color: #4f5d73;
+            width: 80%; /* Percentual de habilidade */
+            border-radius: 5px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #4f5d73;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .experience-card {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .experience-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Amanda Petersen</h1>
+        <p>Desenvolvedora de Software | Análise e Desenvolvimento de Sistemas</p>
+        <div class="contact-info">
+            <p>Contato: (41) 99726-0983 | <a href="mailto:amanda.lettycia.alves@hotmail.com">amanda.lettycia.alves@hotmail.com</a></p>
+            <p>Cidade: Curitiba - PR</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>Sobre Mim</h2>
+        <div>
+            <img src="images/sua-foto.jpg" alt="Amanda Petersen">
+            <p>Sou uma profissional versátil com experiência em suporte técnico, projetos pessoais de desenvolvimento de software e administração empresarial. Adaptável a diferentes desafios e focada em agregar valor ao ambiente de trabalho. 📚💻🌱</p>
+        </div>
+    </section>
+
+    <section class="experience">
+        <h2>Experiência Profissional</h2>
+        <div class="experience-card">
+            <h3>Administrativo | TLSV Engenharia</h3>
+            <p><strong>03/2019 – 10/2020</strong></p>
+            <p>Gerenciamento de folha de ponto, controle de férias, emissão de advertências e suporte em rotinas administrativas. Organizei processos internos utilizando o sistema SAM para garantir eficiência operacional.</p>
+        </div>
+        <div class="experience-card">
+            <h3>Comercial | Medical Saúde</h3>
+            <p><strong>03/2021 – 08/2022</strong></p>
+            <p>Vendas e atendimento a clientes, emissão de notas fiscais, coordenação de envio de mercadorias e administração de e-commerce.</p>
+        </div>
+        <div class="experience-card">
+            <h3>Estágio em Suporte Técnico N1 | Omega Automação Comercial</h3>
+            <p><strong>03/2024 - 01/2025</strong></p>
+            <p>Suporte técnico a usuários de softwares, gerenciamento de chamados e desenvolvimento de bancos de dados utilizando PostgreSQL.</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Habilidades Técnicas</h2>
+        <div>
+            <i class="fab fa-python" title="Python"></i>
+            <i class="fab fa-php" title="PHP"></i>
+            <i class="fab fa-js" title="JavaScript"></i>
+            <i class="fab fa-react" title="React"></i>
+            <i class="fab fa-angular" title="Angular"></i>
+            <i class="fab fa-vuejs" title="Vue.js"></i>
+            <i class="fas fa-database" title="Banco de Dados (PostgreSQL, MySQL)"></i>
+        </div>
+        <h3>Conhecimento em Banco de Dados</h3>
+        <div class="progress-bar">
+            <span style="width: 70%;"></span>
+        </div>
+        <h3>Desenvolvimento Front-End</h3>
+        <div class="progress-bar">
+            <span style="width: 60%;"></span>
+        </div>
+        <h3>Desenvolvimento Back-End</h3>
+        <div class="progress-bar">
+            <span style="width: 50%;"></span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Amanda Petersen | Todos os direitos reservados</p>
+        <p>Veja meu <a href="https://www.instagram.com/aamandapettersen?igsh=dWIzcTl6cmpvbnVu&utm_source=qr" target="_blank" style="color: #fff; text-decoration: none;">Instagram</a></p>
+    </footer>
+</body>
+
+</html>
