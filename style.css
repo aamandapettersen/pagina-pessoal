@@ -18,22 +18,19 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* Cabeçalho */
-header {
-    background-color: #261329;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Margem global para seções */
+section, header {
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.header-content {
+/* Ajustes no Cabeçalho */
+header {
     display: flex;
     align-items: center;
     gap: 30px;
-    width: 90%;
-    max-width: 1200px;
+    flex-wrap: wrap; /* Responsividade */
 }
 
 .foto-grande {
@@ -65,14 +62,8 @@ header {
 }
 
 /* Experiência */
-.experience {
-    padding: 50px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
 .experience-card {
-    background-color: #3d2147;
+    background-color: #3d2147; /* Fundo dos cartões */
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
@@ -80,7 +71,7 @@ header {
 }
 
 .experience-card h3 {
-    color: #ff6392;
+    color: #ff6392; /* Títulos em rosa */
     margin-bottom: 10px;
 }
 
@@ -90,18 +81,12 @@ header {
 }
 
 /* Habilidades */
-.skills {
-    padding: 50px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
 .skills h2 {
     margin-bottom: 30px;
 }
 
 .technical-skills, .soft-skills {
-    background-color: #3d2147;
+    background-color: #3d2147; /* Fundo dos blocos */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -109,37 +94,20 @@ header {
 }
 
 .technical-skills h3, .soft-skills h3 {
+    font-size: 1.5rem;
     color: #ff6392;
     margin-bottom: 15px;
 }
 
-.skill-item {
-    display: flex;
-    align-items: center;
+.skill-item, .soft-skills li {
     margin-bottom: 10px;
-}
-
-.skill-item i {
-    font-size: 1.5em;
-    color: #ff6392;
-    margin-right: 10px;
-}
-
-.skill-item span, .soft-skills li {
     font-size: 1rem;
     line-height: 1.6;
 }
 
 /* Contato */
 .contact {
-    padding: 50px;
     text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.contact h2 {
-    margin-bottom: 20px;
 }
 
 .contact p, .contact a {
