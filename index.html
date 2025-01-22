@@ -10,7 +10,128 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <!-- Link para Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo geral */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #261329;
+            color: #fff;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #4f5d73;
+            text-align: center;
+            color: #fff;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .foto-grande {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .header-text {
+            text-align: left;
+        }
+
+        nav {
+            background-color: #4f5d73;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #f06292;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #f06292;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        .experience, .skills, .contact {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #4f5d73;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience-card {
+            margin-bottom: 20px;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .skill-item i {
+            font-size: 1.5em;
+            color: #f06292;
+            margin-right: 10px;
+        }
+
+        .soft-skills ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .soft-skills li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #4f5d73;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        a {
+            color: #f06292;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,97 +143,66 @@
                 <h1>Amanda Petersen</h1>
                 <p>Desenvolvedora de Software | Análise e Desenvolvimento de Sistemas</p>
                 <p class="about-me">
-                    Sou uma profissional versátil com experiência em suporte técnico, projetos pessoais de desenvolvimento de software e administração empresarial. Adaptável a diferentes desafios e focada em agregar valor ao ambiente de trabalho. 📚💻🌱
+                    Sou uma profissional versátil, com experiência em suporte técnico, administração empresarial e projetos pessoais de desenvolvimento de software. Estudante no último período de Análise e Desenvolvimento de Sistemas, possuo conhecimentos em desenvolvimento Back-End e Front-End, utilizando tecnologias como Python, JavaScript e frameworks modernos. Tenho interesse em criar soluções escaláveis e funcionais, aplicando boas práticas de desenvolvimento e design. Adaptável a diferentes desafios, estou focada em agregar valor ao ambiente de trabalho e em inovar por meio de aprendizado contínuo. 📚💻🌱
                 </p>
             </div>
         </div>
     </header>
-    
+
+    <!-- Menu de navegação -->
+    <nav>
+        <a href="#about">Sobre Mim</a>
+        <a href="#experience">Experiência</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
     <!-- Experiência Profissional -->
-    <section class="experience">
+    <section id="experience" class="experience">
         <h2>Experiência Profissional</h2>
         <div class="experience-card">
             <h3>Administrativo | TLSV Engenharia</h3>
             <p><strong>03/2019 – 10/2020</strong></p>
-            <p>Gerenciamento de folha de ponto, controle de férias, emissão de advertências e suporte em rotinas administrativas. Organizei processos internos utilizando o sistema SAM para garantir eficiência operacional.</p>
+            <p>Gerenciamento de folha de ponto, controle de férias, emissão de advertências e suporte em rotinas administrativas.</p>
         </div>
         <div class="experience-card">
             <h3>Comercial | Medical Saúde</h3>
             <p><strong>03/2021 – 08/2022</strong></p>
             <p>Vendas e atendimento a clientes, emissão de notas fiscais, coordenação de envio de mercadorias e administração de e-commerce.</p>
         </div>
-        <div class="experience-card">
-            <h3>Estágio em Suporte Técnico N1 | Omega Automação Comercial</h3>
-            <p><strong>03/2024 - 01/2025</strong></p>
-            <p>Suporte técnico a usuários de softwares, gerenciamento de chamados e desenvolvimento de bancos de dados utilizando PostgreSQL.</p>
+        </div>
+    <div class="experience-card">
+        <h3>Estágio em Suporte Técnico N1 | Omega Automação Comercial</h3>
+        <p><strong>03/2024 - 01/2025</strong></p>
+        <p>Suporte técnico a usuários de softwares, gerenciamento de chamados e desenvolvimento de bancos de dados utilizando PostgreSQL.</p>
+    </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+        <h2>Habilidades</h2>
+        <div class="technical-skills">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Programação em Python</span>
+            </div>
+            <!-- Outros itens técnicos aqui -->
+        </div>
+
+        <div class="soft-skills">
+            <h3>Habilidades Comportamentais</h3>
+            <ul>
+                <li>Compromisso com aprendizado contínuo e inovação.</li>
+                <li>Facilidade para trabalhar em equipe e enfrentar desafios com visão estratégica.</li>
+            </ul>
         </div>
     </section>
 
-<!-- Habilidades Técnicas e Comportamentais -->
-<section class="skills">
-    <h2>Habilidades</h2>
-
-    <div class="technical-skills">
-        <h3>Habilidades Técnicas</h3>
-        <div class="skill-item">
-            <i class="fab fa-python" title="Python"></i>
-            <span>Programação em Python</span>
-        </div>
-        <div class="skill-item">
-            <i class="fab fa-php" title="PHP"></i>
-            <span>Programação em PHP</span>
-        </div>
-        <div class="skill-item">
-            <i class="fas fa-database" title="PostgreSQL"></i>
-            <span>Bancos de Dados Relacionais: PostgreSQL</span>
-        </div>
-        <div class="skill-item">
-            <i class="fab fa-html5" title="HTML5"></i>
-            <i class="fab fa-css3-alt" title="CSS3"></i>
-            <i class="fab fa-js" title="JavaScript"></i>
-            <span>HTML5, CSS3 e JavaScript</span>
-        </div>
-        <div class="skill-item">
-            <i class="fab fa-react" title="React"></i>
-            <i class="fab fa-vuejs" title="Vue.js"></i>
-            <span>Frameworks: React e Vue.js</span>
-        </div>
-        <div class="skill-item">
-            <i class="fas fa-mobile-alt" title="Design Responsivo"></i>
-            <span>Design Responsivo e Integração de APIs</span>
-        </div>
-        <div class="skill-item">
-            <i class="fab fa-git-alt" title="Git"></i>
-            <span>Versionamento de Código com Git</span>
-        </div>
-        <div class="skill-item">
-            <i class="fas fa-cloud" title="Serviços em Nuvem"></i>
-            <span>Familiaridade com AWS e Google Cloud</span>
-        </div>
-        <div class="skill-item">
-            <i class="fas fa-tasks" title="Metodologias Ágeis"></i>
-            <span>Metodologias Ágeis (Scrum e Kanban)</span>
-        </div>
-    </div>
-
-    <div class="soft-skills">
-        <h3>Habilidades Comportamentais</h3>
-        <ul>
-            <li>Compromisso com aprendizado contínuo e inovação.</li>
-            <li>Facilidade para trabalhar em equipe e enfrentar desafios com visão estratégica.</li>
-            <li>Capacidade de desenvolver soluções práticas e eficientes, alinhadas aos objetivos organizacionais.</li>
-            <li>Organização e planejamento de processos.</li>
-            <li>Pacote Office Intermediário.</li>
-        </ul>
-    </div>
-</section>
-
     <!-- Contato -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <h2>Contato</h2>
-        <p>Telefone: (41) 99726-0983</p>
         <p>Email: <a href="mailto:amanda.lettycia.alves@hotmail.com">amanda.lettycia.alves@hotmail.com</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/aamandapettersen" target="_blank">@aamandapettersen</a></p>
     </section>
 
     <!-- Rodapé -->
@@ -122,3 +212,4 @@
 </body>
 
 </html>
+
