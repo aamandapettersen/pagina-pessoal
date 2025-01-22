@@ -1,70 +1,96 @@
-/* Geral */
-body {
-    color: #ffffff; /* Texto branco */
-    background-color: #261329; /* Fundo lilás escuro */
-    font-family: Arial, sans-serif;
+/* Resetando estilos */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Cabeçalho e Rodapé */
-header, footer {
-    background-color: #261329; /* Fundo lilás escuro */
-    color: #ffffff; /* Texto branco */
-    text-align: center;
-    padding: 15px 0;
-}
-
-/* Seção Perfil */
-.perfil {
-    text-align: center;
-    margin: 20px;
-}
-
-.foto-nome {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
     display: flex;
-    align-items: center; /* Alinha verticalmente */
-    justify-content: center; /* Centraliza no espaço */
-    gap: 20px; /* Espaçamento entre a foto e o nome */
+    justify-content: center;
+    padding-top: 20px;
 }
 
-.foto {
-    width: 150px; /* Tamanho maior */
-    height: 150px; /* Formato quadrado */
-    border-radius: 0; /* Remove arredondamento */
-    object-fit: cover; /* Garante que a imagem se ajuste ao formato */
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.perfil h1 {
-    font-size: 24px;
-}
-
-/* Experiências */
-.experiencia-container {
-    display: flex;
-    flex-direction: column; /* Alinha verticalmente */
-    gap: 20px; /* Espaço entre os blocos */
-    margin: 20px;
-}
-
-.experiencia {
-    text-align: left; /* Texto alinhado à esquerda */
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
-    border-radius: 8px;
-}
-
-/* Contato */
-.contato {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
     text-align: center;
-    margin: 20px;
 }
 
-.contato a {
-    color: #ffb6c1; /* Rosa claro para os links */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.contato a:hover {
-    text-decoration: underline;
+section {
+    padding: 50px 0;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.descricao {
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.experiencia, .habilidade {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contatos a {
+    margin: 10px;
+}
+
+.contatos img {
+    width: 40px;
+    height: 40px;
 }
