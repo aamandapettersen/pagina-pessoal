@@ -102,31 +102,33 @@ header {
     display: flex;
     justify-content: space-between; /* Espaçamento uniforme entre as caixas */
     gap: 20px; /* Espaço entre as colunas */
-    margin-top: 30px; /* Espaço superior para separação do título */
 }
 
-.technical-skills, .soft-skills {
-    background-color: #3d2147; /* Fundo dos blocos */
+.skill-box {
+    background-color: #3d2147; /* Fundo das caixas */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
     width: 48%; /* Ambas as caixas ocupam 48% da largura total */
     box-sizing: border-box; /* Inclui padding no cálculo de largura */
 }
 
-.technical-skills h3, .soft-skills h3 {
+.skill-box h3 {
     font-size: 1.5rem;
-    color: #ff6392; /* Subtítulos em rosa */
+    color: #ff6392; /* Títulos em rosa */
     margin-bottom: 15px;
-    text-align: center; /* Centraliza o texto */
 }
 
-/* Itens de habilidades */
-.skill-item, .soft-skills li {
+.skill-box ul {
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+.skill-box li {
     margin-bottom: 10px;
     font-size: 1rem;
     line-height: 1.6;
-    color: #ffffff; /* Texto branco */
+    color: #ffffff; /* Texto em branco */
 }
 
 /* Contato */
