@@ -85,6 +85,66 @@ header {
     color: #eee;
 }
 
+/* Habilidades */
+.skills {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.technical-skills, .soft-skills {
+    margin-bottom: 30px;
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.technical-skills h3, .soft-skills h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #261329;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-item i {
+    font-size: 1.5em;
+    color: #4f5d73;
+    margin-right: 10px;
+}
+
+.skill-item span {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.soft-skills ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.soft-skills li {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
 /* Contato */
 .contact {
     padding: 50px;
