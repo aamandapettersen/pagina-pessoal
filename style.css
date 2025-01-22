@@ -25,6 +25,21 @@ section, header {
     margin: 0 auto;
 }
 
+/* Justificar todos os textos dentro das seções */
+section {
+    text-align: justify;
+}
+
+/* Justificar o texto das habilidades */
+.skills h2, .skills h3, .skills span {
+    text-align: justify;
+}
+
+/* Garantir que a descrição dentro de cada item de habilidade também seja justificada */
+.skill-item {
+    text-align: justify;
+}
+
 /* Ajustes no Cabeçalho */
 header {
     display: flex;
@@ -36,7 +51,7 @@ header {
 .foto-grande {
     width: 250px;
     height: 250px;
-    border-radius: 10px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
@@ -81,8 +96,18 @@ header {
 }
 
 /* Habilidades */
+.skills {
+    display: flex;
+    justify-content: space-between; /* Alinha as colunas lado a lado */
+    gap: 20px;
+}
+
 .skills h2 {
-    margin-bottom: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff6392;
+    width: 100%; /* Garante que o título ocupe toda a largura disponível */
 }
 
 .technical-skills, .soft-skills {
@@ -91,12 +116,14 @@ header {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 48%; /* Garante que as duas colunas ocupem 48% da largura */
 }
 
 .technical-skills h3, .soft-skills h3 {
     font-size: 1.5rem;
     color: #ff6392;
     margin-bottom: 15px;
+    text-align: center; /* Centraliza os subtítulos das habilidades */
 }
 
 .skill-item, .soft-skills li {
