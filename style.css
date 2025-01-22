@@ -61,14 +61,14 @@ header {
 }
 
 .header-text h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;/* Aumentando o tamanho da fonte do título */
     margin-bottom: 10px;
 }
 
-.header-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin: 5px 0;
+.header-text p:first-child {
+    color: #ff6392; /* Cor rosa para o subtítulo */
+    font-size: 1.2rem; /* Ajustando o tamanho da fonte do subtítulo */
+    font-weight: bold; /* Para dar um destaque maior */
 }
 
 .header-text .about-me {
