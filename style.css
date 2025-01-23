@@ -118,34 +118,13 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Caixas de experiência, habilidades e sobre mim */
+/* Caixas de experiência e habilidades */
 .experience-card,
-.skill-box,
-.about-me-box {
+.skill-box {
     background-color: #3b2040;
     border-radius: 10px;
     padding: 15px;
     margin: 10px 0;
-    max-width: 800px; /* Limita a largura da caixinha */
-    margin: 20px auto; /* Centraliza as caixinhas */
-}
-
-/* Centralizando o título e a caixinha de descrição */
-.about-description {
-    text-align: center; /* Centraliza o título e a caixinha de descrição */
-    margin-top: 30px; /* Adiciona uma margem superior para separar da foto */
-}
-
-.about-description h1 {
-    color: #fff;
-    font-size: 2rem; /* Tamanho maior para o título */
-    margin-bottom: 20px; /* Espaçamento entre o título e a caixinha */
-}
-
-.about-me-box p {
-    color: #fff;
-    font-size: 1rem;
-    line-height: 1.6;
 }
 
 /* Habilidades Técnicas */
