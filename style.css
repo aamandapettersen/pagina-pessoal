@@ -39,8 +39,8 @@ header {
 }
 
 .foto-grande {
-    width: 350px !important; /* Garante o tamanho definido */
-    height: 350px !important; /* Mantém o formato quadrado */
+    width: 300px !important; /* Garante o tamanho definido */
+    height: 300px !important; /* Mantém o formato quadrado */
     border-radius: 0 !important; /* Remove arredondamento */
     object-fit: cover; /* Ajusta a imagem sem distorção */
     margin: 0 auto; /* Centraliza horizontalmente, se necessário */
