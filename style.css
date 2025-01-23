@@ -120,6 +120,18 @@ header {
     margin-left: 0;
 }
 
+/* Alterar a cor de textos de cargos */
+.experience-card h3, /* Título de experiência */
+.skill-box h3 { /* Título de habilidades, caso também queira */
+    color: #f08dac; /* Cor rosa */
+}
+
+/* Caso sejam textos dentro da descrição e não títulos */
+.experience-card p, 
+.skill-box p {
+    color: #f08dac; /* Cor rosa */
+}
+
 /* Habilidades */
 h2 {
     color: #fff;
