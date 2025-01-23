@@ -21,6 +21,7 @@ header {
     display: flex;
     align-items: center;
     padding: 20px;
+    margin: 0; /* Remover margens */
 }
 
 /* Contêiner Flexível para Foto e Descrição */
@@ -29,13 +30,13 @@ header {
     flex-direction: column; /* Alinha os itens na coluna */
     align-items: center; /* Centraliza o conteúdo */
     gap: 20px; /* Espaço entre os itens */
-    margin: 20px;
+    margin: 0; /* Remover margens */
 }
 
 /* Foto */
 .about-photo img {
-    width: 150px;
-    height: 150px;
+    width: 350px;
+    height: 350px;
     border-radius: 10%;
     border: 5px solid #fff; /* Borda branca */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Sombra leve */
@@ -47,6 +48,7 @@ header {
 .about-description {
     width: 60%;
     text-align: justify;
+    margin: 0; /* Remover margens */
 }
 
 /* Texto do cabeçalho */
@@ -80,6 +82,7 @@ header {
     align-items: flex-start; /* Alinha à esquerda */
     margin-top: 20px;
     width: 100%;
+    margin: 0; /* Remover margens */
 }
 
 .contact h2 {
