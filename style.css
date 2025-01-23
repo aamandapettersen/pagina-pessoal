@@ -159,7 +159,38 @@ h1, h2 {
 .contact a:hover {
     text-decoration: underline;
 }
+/* Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Reduz o tamanho do título principal */
+    }
 
+    h2 {
+        font-size: 1.8rem; /* Reduz o tamanho dos subtítulos */
+    }
+
+    .header-text p {
+        font-size: 1.2rem; /* Ajusta o subtítulo */
+    }
+
+    .foto-grande {
+        width: 200px; /* Reduz o tamanho da imagem */
+        height: 200px; /* Mantém a proporção */
+    }
+
+    section, header {
+        padding: 20px; /* Diminui o padding das seções */
+    }
+
+    .skills {
+        flex-direction: column; /* Coloca as caixas uma embaixo da outra */
+        gap: 15px; /* Reduz o espaço entre as caixas */
+    }
+
+    .skill-box {
+        width: 100%; /* Faz com que as caixas ocupem toda a largura */
+    }
+}
 /* Rodapé */
 footer {
     text-align: center;
