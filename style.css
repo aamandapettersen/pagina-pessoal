@@ -39,11 +39,12 @@ header {
 }
 
 .foto-grande {
-    width: 600px; /* Define o tamanho da largura */
-    height: 600px; /* Define o tamanho da altura igual à largura */
-    border-radius: 0px; /* Bordas levemente arredondadas */
-    object-fit: cover; /* Ajusta a imagem para preencher o quadrado sem distorção */
-    margin-bottom: 20px; /* Espaço inferior para separar a foto do texto */
+    width: 600px !important; /* Garante o tamanho definido */
+    height: 600px !important; /* Mantém o formato quadrado */
+    border-radius: 0 !important; /* Remove arredondamento */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+    margin: 0 auto; /* Centraliza horizontalmente, se necessário */
+    display: block; /* Certifica que a imagem se comporte como um bloco */
 }
 
 .header-text {
@@ -57,10 +58,10 @@ h1 {
 }
 
 /* Subtítulo "Desenvolvedora de Software | Análise e Desenvolvimento de Sistemas" em rosa */
-.header-text p {
+.header-text p:first-child {
     font-size: 1.5rem; /* Um pouco menor que o título principal */
     font-weight: bold;
-    color: #ff6392;
+    color: #ff6392 !important; /* Garante o rosa */
 }
 .header-text .about-me {
     font-size: 1rem;
@@ -91,11 +92,11 @@ h1 {
 h2 {
     font-size: 2rem; /* Tamanho consistente para subtítulos */
     color: #ffffff;
-    text-align: left;
+    text-align: left !important; /* Alinha à esquerda */;
     border-bottom: 2px solid #ff6392;
     display: inline-block;
     padding-bottom: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 h1, h2 {
@@ -161,34 +162,22 @@ h1, h2 {
 }
 /* Ajustes para dispositivos menores */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem; /* Reduz o tamanho do título principal */
-    }
-
-    h2 {
-        font-size: 1.8rem; /* Reduz o tamanho dos subtítulos */
-    }
-
-    .header-text p {
-        font-size: 1.2rem; /* Ajusta o subtítulo */
-    }
-
     .foto-grande {
-        width: 200px; /* Reduz o tamanho da imagem */
-        height: 200px; /* Mantém a proporção */
+        width: 300px !important; /* Tamanho menor em dispositivos móveis */
+        height: 300px !important;
     }
 
-    section, header {
-        padding: 20px; /* Diminui o padding das seções */
+    .header-text {
+        text-align: center; /* Centraliza os textos no cabeçalho */
     }
 
     .skills {
-        flex-direction: column; /* Coloca as caixas uma embaixo da outra */
-        gap: 15px; /* Reduz o espaço entre as caixas */
+        flex-direction: column; /* Alinha as caixas verticalmente */
+        gap: 20px; /* Espaçamento entre elas */
     }
 
-    .skill-box {
-        width: 100%; /* Faz com que as caixas ocupem toda a largura */
+    .skills .skill-box {
+        width: 100%; /* Cada caixa ocupa a largura total */
     }
 }
 /* Rodapé */
