@@ -119,6 +119,7 @@ h2 {
 }
 
 /* Caixas de experiência e habilidades */
+.about-me-box,
 .experience-card,
 .skill-box {
     background-color: #3b2040;
