@@ -17,17 +17,63 @@ h2 {
     display: inline-block;
     padding-bottom: 5px;
 }
+/* Animação de digitação */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
 
+/* Estilo do título com digitação */
+h1 {
+    overflow: hidden; /* Esconde o texto fora da área visível */
+    border-right: 3px solid #ff6392; /* Efeito do cursor */
+    white-space: nowrap; /* Evita quebra de linha */
+    width: 0; /* Começa com largura 0 */
+    animation: typing 3s steps(20, end), blink 0.5s step-end infinite; /* Digitação e piscar */
+}
 /* Margem global para seções */
 section, header {
     padding: 50px;
     max-width: 900px;
     margin: 0 auto;
 }
-
+/* Rolar suavemente para seções */
+html {
+    scroll-behavior: smooth;
+}
 /* Justificar todos os textos dentro das seções */
-section {
+body {
+    background-color: #261329;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: justify; /* Alinha todos os textos do corpo em justificado */
+}
+.about-me,
+.experience-card,
+.contact p,
+.skill-box ul {
     text-align: justify;
+}
+/* Animação de "pulo" nos ícones */
+.contact a {
+    transition: transform 0.2s ease, color 0.2s ease; /* Suavidade */
+}
+
+.contact a:hover {
+    transform: scale(1.2); /* Aumenta 20% */
+    color: #ff6392; /* Fica rosa */
+}
 }
 /* Configuração das seções */
 section {
@@ -91,6 +137,9 @@ header {
 }
 
 .foto-grande {
+    border: 4px solid #ffffff; /* Moldura branca */
+    border-radius: 50%; /* Circular */
+    box-shadow: 0 0 0 5px #ff6392; /* Segunda moldura rosa */
     width: 300px !important; /* Garante o tamanho definido */
     height: 300px !important; /* Mantém o formato quadrado */
     border-radius: 0 !important; /* Remove arredondamento */
@@ -182,8 +231,9 @@ h1, h2 {
 }
 
 .skill-box ul {
-    list-style-type: none; /* Remove os marcadores padrão */
-    padding: 0; /* Remove padding padrão */
+    list-style-type: disc; /* Garante que a lista use marcadores padrão */
+    padding-left: 20px;    /* Adiciona um espaçamento para alinhar os marcadores */
+    margin: 0;            /* Remove margens extras */
 }
 
 .skill-box li {
@@ -254,6 +304,13 @@ h1, h2 {
     body, .header-text, section {
         text-align: center !important;
     }
+ /* Links em dispositivos móveis */
+    a {
+        color: inherit; /* Sempre herda a cor do texto */
+    }
+
+    .experience-card a {
+        color: inherit !important; /* Força a herança da cor */
 
     /* A foto sozinha no topo, centralizada e responsiva */
     .foto-grande {
@@ -304,7 +361,22 @@ h1, h2 {
     color: inherit;
     text-decoration: none;
 }
+/* Links - Remoção total de azul em todos os dispositivos */
+a {
+    color: inherit; /* Herda a cor do texto ao redor */
+    text-decoration: none; /* Remove sublinhado */
+}
 
+a:hover {
+    color: #ff6392; /* Rosa ao passar o mouse */
+    text-decoration: underline; /* Apenas sublinhado no hover */
+}
+
+/* Garantir que links dentro das experiências e habilidades não sejam azuis */
+.experience-card a, .skills a {
+    color: #fff !important; /* Força o branco em qualquer link dentro dessas seções */
+    text-decoration: none;
+}
 }
 /* Rodapé */
 footer {

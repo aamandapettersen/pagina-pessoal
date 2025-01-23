@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             background-color: #261329;
@@ -16,88 +17,118 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+        }
+
+        /* Certificando que cada seção ocupa a tela toda */
+        section {
+            scroll-snap-align: start;
+            min-height: 100vh;
+            padding: 20px;
         }
 
         header {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
             align-items: center;
             padding: 20px;
-            text-align: center;
         }
 
+        /* Contêiner Flexível para Foto e Descrição */
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 20px;
+        }
+
+        /* Foto */
         .about-photo img {
-            width: 150px;
-            height: 150px;
+            width: 50%;
+            max-width: 250px;
+            height: auto;
             border-radius: 50%;
-            margin-bottom: 20px;
         }
 
-        .about-description h1 {
-            font-size: 2rem;
-            margin: 10px 0;
+        /* Descrição */
+        .about-description {
+            width: 50%;
+            text-align: justify;
         }
 
-        .about-description p {
+        .foto-grande {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .header-text h1 {
+            color: #fff;
+            margin: 0;
+        }
+
+        .header-text p {
             margin: 5px 0;
-            color: #fff; /* Texto branco */
+            color: #f08dac;
         }
 
-        section {
-            padding: 20px;
+        /* Seção de Contato */
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-right: 20px;
         }
 
+        .contact i {
+            color: #f08dac;
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+        /* Habilidades */
         h2 {
             color: #fff;
             border-bottom: 2px solid #f08dac;
             display: inline-block;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .experience-card,
-        .skill-box {
+        .skill-card {
             background-color: #3b2040;
             border-radius: 10px;
             padding: 15px;
             margin: 10px 0;
         }
-        .experience-card h3 {
-            color: #f08dac; /* Títulos rosa */
-        }
 
         .skills {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            display: flex;
             gap: 20px;
+            flex-wrap: wrap;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .technical-skills,
+        .soft-skills {
+            flex: 1;
         }
 
-        ul li {
-            margin: 10px 0;
+        .skill-item {
             display: flex;
             align-items: center;
+            margin: 10px 0;
         }
 
-        ul li i {
+        .skill-item i {
             margin-right: 10px;
             color: #f08dac;
             font-size: 1.5em;
         }
-         #contact a {
-            color: #fff; /* Links em branco */
-            text-decoration: none;
-        }
 
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #1f0e20;
-            margin-top: 20px;
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -105,15 +136,35 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <div class="about-photo">
-            <img src="sua-foto.jpeg" alt="Amanda Petersen">
-        </div>
-        <div class="about-description">
-            <h1>Amanda Petersen</h1>
-            <p>Desenvolvedora de Software | Análise e Desenvolvimento de Sistemas</p>
-            <p>Sou uma profissional versátil, com experiência em suporte técnico, administração empresarial e projetos pessoais de desenvolvimento de software. Estudante no último período de Análise e Desenvolvimento de Sistemas, possuo conhecimentos em desenvolvimento Back-End e Front-End. 📚💻🌱</p>
+        <div class="header-content">
+            <!-- Contêiner para foto e descrição -->
+            <div class="header-flex">
+                <!-- Foto -->
+                <div class="about-photo">
+                    <img src="sua-foto.jpeg" alt="Amanda Petersen" class="foto-grande">
+                </div>
+                <!-- Descrição -->
+                <div class="about-description">
+                    <h1>Amanda Petersen</h1>
+                    <p class="subtitulo">Olá, seja bem-vindo(a) ao meu portfólio! 😊</p>
+
+                    <p class="about-me">
+                        É um prazer ter você aqui! Sou Amanda Petersen, desenvolvedora de software e estudante do último período de Análise e Desenvolvimento de Sistemas. Tenho experiência em suporte técnico, administração empresarial e desenvolvimento de projetos pessoais na área de tecnologia.  
+                        Estou constantemente em busca de aprendizado e aprimoramento, especialmente em desenvolvimento Back-End e Front-End, com o objetivo de criar soluções práticas e eficientes.  
+                        Espero que você aproveite este espaço para conhecer mais sobre mim e meu trabalho. 💻📚🌟  
+                    </p>
+                </div>
+            </div>
         </div>
     </header>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <p>Email: <a href="mailto:amanda.lettycia.alves@hotmail.com"><i class="fas fa-envelope"></i>amanda.lettycia.alves@hotmail.com</a></p>
+        <p>Telefone: <a href="tel:+5541997260983"><i class="fas fa-phone-alt"></i>(41) 99726-0983</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/aamandapettersen?igsh=dWIzcTl6cmpvbnVu&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i>@aamandapettersen</a></p>
+    </section>
 
     <!-- Experiência Profissional -->
     <section id="experience">
@@ -139,21 +190,24 @@
     <section id="skills">
         <h2>Habilidades</h2>
         <div class="skills">
+            <!-- Habilidades Técnicas -->
             <div class="skill-box">
                 <h3>Habilidades Técnicas</h3>
                 <ul>
                     <li><i class="fa-solid fa-code"></i> Programação em Python</li>
-                <li><i class="fa-brands fa-php"></i> Programação em PHP</li>
-                <li><i class="fa-solid fa-database"></i> Bancos de Dados Relacionais: PostgreSQL</li>
-                <li><i class="fa-brands fa-html5"></i> HTML5, CSS3 e JavaScript</li>
-                <li><i class="fa-brands fa-react"></i> Frameworks: React e Vue.js</li>
-                <li><i class="fa-solid fa-mobile-screen"></i> Design Responsivo e Integração de APIs</li>
-                <li><i class="fa-solid fa-code-branch"></i> Versionamento de Código com Git</li>
-                <li><i class="fa-brands fa-aws"></i> Familiaridade com AWS e Google Cloud</li>
-                <li><i class="fa-solid fa-clipboard-list"></i> Metodologias Ágeis (Scrum e Kanban)</li>
-                <li><i class="fa-solid fa-laptop"></i> Pacote Office nível intermediário</li>
+                    <li><i class="fa-brands fa-php"></i> Programação em PHP</li>
+                    <li><i class="fa-solid fa-database"></i> Bancos de Dados Relacionais: PostgreSQL</li>
+                    <li><i class="fa-brands fa-html5"></i> HTML5, CSS3 e JavaScript</li>
+                    <li><i class="fa-brands fa-react"></i> Frameworks: React e Vue.js</li>
+                    <li><i class="fa-solid fa-mobile-screen"></i> Design Responsivo e Integração de APIs</li>
+                    <li><i class="fa-solid fa-code-branch"></i> Versionamento de Código com Git</li>
+                    <li><i class="fa-brands fa-aws"></i> Familiaridade com AWS e Google Cloud</li>
+                    <li><i class="fa-solid fa-clipboard-list"></i> Metodologias Ágeis (Scrum e Kanban)</li>
+                    <li><i class="fa-solid fa-laptop"></i> Pacote Office nível intermediário</li>
                 </ul>
             </div>
+
+            <!-- Habilidades Comportamentais -->
             <div class="skill-box">
                 <h3>Habilidades Comportamentais</h3>
                 <ul>
@@ -170,18 +224,11 @@
         </div>
     </section>
 
-    <!-- Contato -->
-    <section id="contact">
-        <h2>Contato</h2>
-        <p>Email: <a href="mailto:amanda.lettycia.alves@hotmail.com">amanda.lettycia.alves@hotmail.com</a></p>
-        <p>Telefone: <a href="tel:+5541997260983">(41) 99726-0983</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/aamandapettersen?igsh=dWIzcTl6cmpvbnVu&utm_source=qr" target="_blank">@aamandapettersen</a></p>
-    </section>
-
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2025 Amanda Petersen | Todos os direitos reservados</p>
     </footer>
+
 </body>
 
 </html>
