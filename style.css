@@ -33,8 +33,8 @@ header {
 
 /* Foto */
 .about-photo img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 5px solid #f08dac; /* Borda da foto */
     margin-right: 20px;
