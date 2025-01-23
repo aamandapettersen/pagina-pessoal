@@ -33,13 +33,14 @@ header {
 
 /* Foto */
 .about-photo img {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     border-radius: 10%;
     border: 5px solid #f08dac; /* Borda da foto */
     border: 5px solid #fff; /* Borda branca */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Sombra leve */
     margin-right: 20px;
+    margin-left: 40px; /* Adiciona margem à esquerda para mover a foto para a direita */
 }
 
 /* Descrição */
