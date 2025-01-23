@@ -162,22 +162,44 @@ h1, h2 {
 }
 /* Ajustes para dispositivos menores */
 @media (max-width: 768px) {
+    /* Centralizar todos os textos */
+    body, .header-text, section {
+        text-align: center !important;
+    }
+
+    /* A foto sozinha no topo, centralizada e responsiva */
     .foto-grande {
-        width: 300px !important; /* Tamanho menor em dispositivos móveis */
+        width: 300px !important; /* Ajuste no tamanho da foto para telas menores */
         height: 300px !important;
+        margin: 0 auto 20px; /* Centraliza a foto com margem abaixo */
+        display: block;
     }
 
-    .header-text {
-        text-align: center; /* Centraliza os textos no cabeçalho */
+    /* Deixar os textos e títulos alinhados no centro */
+    .header-text h1, .header-text p {
+        text-align: center !important;
     }
 
+    /* Organizar as caixas de habilidades na vertical */
     .skills {
-        flex-direction: column; /* Alinha as caixas verticalmente */
+        flex-direction: column !important; /* Empilha as caixas na vertical */
         gap: 20px; /* Espaçamento entre elas */
     }
 
     .skills .skill-box {
-        width: 100%; /* Cada caixa ocupa a largura total */
+        width: 100% !important; /* Cada caixa ocupa toda a largura */
+    }
+
+    /* Diminuir o tamanho máximo de seções */
+    section, header {
+        padding: 20px !important; /* Reduz o espaço interno */
+        max-width: 95% !important; /* Limita a largura para telas pequenas */
+    }
+
+    /* Ajustar o rodapé */
+    footer {
+        font-size: 0.8rem; /* Texto menor no rodapé */
+        padding: 10px; /* Reduz espaço no rodapé */
     }
 }
 /* Rodapé */
