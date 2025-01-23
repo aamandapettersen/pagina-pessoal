@@ -8,6 +8,7 @@ body {
     overflow-y: scroll;
 }
 
+/* Certificando que cada seção ocupa a tela toda */
 section {
     scroll-snap-align: start;
     min-height: 100vh;
@@ -21,6 +22,7 @@ header {
     padding: 20px;
 }
 
+/* Contêiner Flexível para Foto e Descrição */
 .header-flex {
     display: flex;
     align-items: center;
@@ -28,26 +30,21 @@ header {
     margin: 0 20px;
 }
 
+/* Foto */
 .about-photo img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    border: 5px solid #f08dac; /* Borda rosa na foto */
+    border: 5px solid #f08dac; /* Borda da foto */
 }
 
+/* Descrição */
 .about-description {
     width: 50%;
     text-align: justify;
 }
 
-.foto-grande {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
+/* Texto do cabeçalho */
 .header-text h1 {
     color: #fff;
     margin: 0;
@@ -58,31 +55,18 @@ header {
     color: #f08dac;
 }
 
-/* Contato */
+/* Seção de Contato */
 .contact a {
-    color: #f08dac; /* Cor rosa */
+    color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 20px;
 }
 
 .contact i {
+    color: #f08dac;
     margin-right: 10px;
     font-size: 1.5em;
-}
-
-/* Experiência e Habilidades - Caixinhas */
-.experience-card,
-.skill-card {
-    background-color: #3b2040;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px 0;
-}
-
-.experience-card h3,
-.skill-card h3 {
-    margin-top: 0;
 }
 
 /* Habilidades */
@@ -93,44 +77,63 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Caixas de experiência e habilidades */
+.experience-card,
+.skill-box {
+    background-color: #3b2040;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Habilidades Técnicas */
 .skills {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
+/* Box de habilidades técnicas */
 .skill-box {
     flex: 1;
-    min-width: 200px;
+    background-color: #3b2040;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.skill-box h3 {
+    color: #fff;
+    margin-bottom: 15px;
 }
 
 .skill-item {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin-bottom: 15px;
 }
 
 .skill-item i {
     margin-right: 10px;
-    color: #f08dac; /* Cor rosa para os ícones */
+    color: #f08dac;
     font-size: 1.5em;
 }
 
-/* Remover marcadores de habilidades */
 ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-ul li {
-    margin: 10px 0;
-    font-size: 1rem;
+/* Habilidades Comportamentais */
+.soft-skills ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 /* Rodapé */
 footer {
+    text-align: center;
+    padding: 20px;
     background-color: #3b2040;
     color: #fff;
-    padding: 10px;
-    text-align: center;
 }
