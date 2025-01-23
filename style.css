@@ -58,10 +58,10 @@ h1 {
 }
 
 /* Subtítulo "Desenvolvedora de Software | Análise e Desenvolvimento de Sistemas" em rosa */
-.header-text p:first-child {
-    font-size: 1.5rem; /* Um pouco menor que o título principal */
+.subtitulo {
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #ff6392 !important; /* Garante o rosa */
+    color: #ff6392 !important; /* Força a cor rosa */
 }
 .header-text .about-me {
     font-size: 1rem;
