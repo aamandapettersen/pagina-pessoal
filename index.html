@@ -5,139 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amanda Petersen - Portfólio</title>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Estilo CSS -->
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: #261329;
-            color: #fff;
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            scroll-snap-type: y mandatory;
-            overflow-y: scroll;
-        }
-
-        /* Certificando que cada seção ocupa a tela toda */
-        section {
-            scroll-snap-align: start;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-        }
-
-        /* Contêiner Flexível para Foto e Descrição */
-        .header-flex {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 0 20px;
-        }
-
-        /* Foto */
-        .about-photo img {
-            width: 50%;
-            max-width: 250px;
-            height: auto;
-            border-radius: 50%;
-        }
-
-        /* Descrição */
-        .about-description {
-            width: 50%;
-            text-align: justify;
-        }
-
-        .foto-grande {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-
-        .header-text h1 {
-            color: #fff;
-            margin: 0;
-        }
-
-        .header-text p {
-            margin: 5px 0;
-            color: #f08dac;
-        }
-
-        /* Seção de Contato */
-        .contact a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            margin-right: 20px;
-        }
-
-        .contact i {
-            color: #f08dac;
-            margin-right: 10px;
-            font-size: 1.5em;
-        }
-
-        /* Habilidades */
-        h2 {
-            color: #fff;
-            border-bottom: 2px solid #f08dac;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-
-        .experience-card,
-        .skill-card {
-            background-color: #3b2040;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 10px 0;
-        }
-
-        .skills {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .technical-skills,
-        .soft-skills {
-            flex: 1;
-        }
-
-        .skill-item {
-            display: flex;
-            align-items: center;
-            margin: 10px 0;
-        }
-
-        .skill-item i {
-            margin-right: 10px;
-            color: #f08dac;
-            font-size: 1.5em;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-    </style>
 </head>
 
 <body>
     <!-- Cabeçalho -->
     <header>
         <div class="header-content">
-            <!-- Contêiner para foto e descrição -->
+            <!-- Foto e Descrição -->
             <div class="header-flex">
                 <!-- Foto -->
                 <div class="about-photo">
@@ -149,8 +30,8 @@
                     <p class="subtitulo">Olá, seja bem-vindo(a) ao meu portfólio! 😊</p>
 
                     <p class="about-me">
-                        É um prazer ter você aqui! Sou Amanda Petersen, desenvolvedora de software e estudante do último período de Análise e Desenvolvimento de Sistemas. Tenho experiência em suporte técnico, administração empresarial e desenvolvimento de projetos pessoais na área de tecnologia.  
-                        Estou constantemente em busca de aprendizado e aprimoramento, especialmente em desenvolvimento Back-End e Front-End, com o objetivo de criar soluções práticas e eficientes.  
+                        É um prazer ter você aqui! Sou Amanda Petersen, desenvolvedora de software e estudante do último período de Análise e Desenvolvimento de Sistemas. Tenho experiência em suporte técnico, administração empresarial e desenvolvimento de projetos pessoais na área de tecnologia.
+                        Estou constantemente em busca de aprendizado e aprimoramento, especialmente em desenvolvimento Back-End e Front-End, com o objetivo de criar soluções práticas e eficientes. 
                         Espero que você aproveite este espaço para conhecer mais sobre mim e meu trabalho. 💻📚🌟  
                     </p>
                 </div>
@@ -160,19 +41,19 @@
 
     <!-- Contato -->
     <section id="contato">
-    <h2>Contato</h2>
-    <div class="contact-icons">
-        <a href="mailto:amanda.lettycia.alves@hotmail.com" title="Email">
-            <i class="fas fa-envelope"></i>
-        </a>
-        <a href="tel:+5541997260983" title="Telefone">
-            <i class="fas fa-phone"></i>
-        </a>
-        <a href="https://www.instagram.com/aamandapettersen" title="Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-    </div>
-</section>
+        <h2>Contato</h2>
+        <div class="contact-icons">
+            <a href="mailto:amanda.lettycia.alves@hotmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+5541997260983" title="Telefone">
+                <i class="fas fa-phone"></i>
+            </a>
+            <a href="https://www.instagram.com/aamandapettersen" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
 
     <!-- Experiência Profissional -->
     <section id="experience">
@@ -220,13 +101,13 @@
                 <h3>Habilidades Comportamentais</h3>
                 <ul>
                     <li>Compromisso com aprendizado contínuo e inovação.</li>
-                <li>Facilidade para trabalhar em equipe e enfrentar desafios com visão estratégica.</li>
-                <li>Capacidade de desenvolver soluções práticas e eficientes, alinhadas aos objetivos organizacionais.</li>
-                <li>Organização e planejamento de processos.</li>
-                <li>Comunicação eficaz.</li>
-                <li>Gestão do tempo e priorização de tarefas.</li>
-                <li>Resiliência e capacidade de lidar com pressão.</li>
-                <li>Foco em resultados e alcance de metas.</li>
+                    <li>Facilidade para trabalhar em equipe e enfrentar desafios com visão estratégica.</li>
+                    <li>Capacidade de desenvolver soluções práticas e eficientes, alinhadas aos objetivos organizacionais.</li>
+                    <li>Organização e planejamento de processos.</li>
+                    <li>Comunicação eficaz.</li>
+                    <li>Gestão do tempo e priorização de tarefas.</li>
+                    <li>Resiliência e capacidade de lidar com pressão.</li>
+                    <li>Foco em resultados e alcance de metas.</li>
                 </ul>
             </div>
         </div>
