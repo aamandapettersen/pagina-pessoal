@@ -29,10 +29,11 @@ header {
 }
 
 .about-photo img {
-    width: 50%;
+    width: 100%;
     max-width: 250px;
     height: auto;
     border-radius: 50%;
+    border: 5px solid #f08dac; /* Borda rosa na foto */
 }
 
 .about-description {
@@ -59,14 +60,13 @@ header {
 
 /* Contato */
 .contact a {
-    color: #fff;
+    color: #f08dac; /* Cor rosa */
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-right: 20px;
 }
 
 .contact i {
-    color: #f08dac;
     margin-right: 10px;
     font-size: 1.5em;
 }
@@ -101,6 +101,7 @@ h2 {
 
 .skill-box {
     flex: 1;
+    min-width: 200px;
 }
 
 .skill-item {
@@ -111,14 +112,19 @@ h2 {
 
 .skill-item i {
     margin-right: 10px;
-    color: #f08dac;
+    color: #f08dac; /* Cor rosa para os ícones */
     font-size: 1.5em;
 }
 
-/* Estilos Gerais */
+/* Remover marcadores de habilidades */
 ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1rem;
 }
 
 /* Rodapé */
