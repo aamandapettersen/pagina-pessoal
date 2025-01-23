@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <style>
         body {
             background-color: #261329;
@@ -21,56 +20,26 @@
 
         header {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
             padding: 20px;
+            text-align: center;
         }
 
-        /* Contêiner Flexível para Foto e Descrição */
-        .header-flex {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 0 20px; /* Adiciona a margem nas laterais */
-        }
-
-        /* Foto */
         .about-photo img {
-            width: 50%; /* A foto ocupa metade da largura */
-            max-width: 250px; /* Define um tamanho máximo para a foto */
-            height: auto; /* Mantém a proporção da imagem */
-            border-radius: 50%; /* Deixa a foto circular */
-        }
-
-        /* Descrição */
-        .about-description {
-            width: 50%; /* A descrição ocupa a outra metade */
-            text-align: justify; /* Justifica o texto */
-        }
-
-        /* Títulos da descrição */
-        .about-description h1,
-        .about-description p {
-            margin: 0;
-        }
-
-        /* Parágrafo da descrição */
-        .about-description .about-me {
-            margin-top: 10px;
-        }
-
-        .foto-grande {
-            width: 250px;
-            height: 250px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
 
-        .header-text h1 {
-            color: #fff;
-            margin: 0;
+        .about-description h1 {
+            font-size: 2rem;
+            margin: 10px 0;
         }
 
-        .header-text p {
+        .about-description p {
             margin: 5px 0;
             color: #f08dac;
         }
@@ -83,11 +52,11 @@
             color: #fff;
             border-bottom: 2px solid #f08dac;
             display: inline-block;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .experience-card,
-        .skill-card {
+        .skill-box {
             background-color: #3b2040;
             border-radius: 10px;
             padding: 15px;
@@ -95,84 +64,52 @@
         }
 
         .skills {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            flex-wrap: wrap;
         }
 
-        .technical-skills,
-        .soft-skills {
-            flex: 1;
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        .skill-item {
+        ul li {
+            margin: 10px 0;
             display: flex;
             align-items: center;
-            margin: 10px 0;
         }
 
-        .skill-item i {
+        ul li i {
             margin-right: 10px;
             color: #f08dac;
             font-size: 1.5em;
         }
 
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #1f0e20;
+            margin-top: 20px;
         }
     </style>
-    <!-- JavaScript para foco em seções -->
-    <!--// Rolagem suave ao clicar nos links-->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll("nav a");
-            navLinks.forEach(link => {
-                link.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute("href").substring(1);
-                    const targetSection = document.getElementById(targetId);
-                    targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-                });
-            });
-        });
-    </script>
 </head>
 
 <body>
-    <!-- Navegação -->
-    <nav>
-        <ul>
-            <li><a href="sobre-mim">Sobre Mim</a></li>
-            <li><a href="experience">Experiência Profissional</a></li>
-            <li><a href="skills">Habilidades</a></li>
-            <li><a href="contact">Contato</a></li>
-        </ul>
-    </nav>
     <!-- Cabeçalho -->
     <header>
-        <div class="header-content">
-            <!-- Contêiner para foto e descrição -->
-            <div class="header-flex">
-                <!-- Foto -->
-                <div class="about-photo">
-                    <img src="sua-foto.jpeg" alt="Amanda Petersen" class="foto-grande">
-                </div>
-                <!-- Descrição -->
-                <div class="about-description">
-                    <h1>Amanda Petersen</h1>
-                    <p class="subtitulo">Desenvolvedora de Software | Análise e Desenvolvimento de Sistemas</p>
-
-                    <p class="about-me">
-                        Sou uma profissional versátil, com experiência em suporte técnico, administração empresarial e projetos pessoais de desenvolvimento de software. Estudante no último período de Análise e Desenvolvimento de Sistemas, possuo conhecimentos em desenvolvimento Back-End e Front-End, utilizando tecnologias como Python, JavaScript e frameworks modernos. Tenho interesse em criar soluções escaláveis e funcionais, aplicando boas práticas de desenvolvimento e design. Adaptável a diferentes desafios, estou focada em agregar valor ao ambiente de trabalho e em inovar por meio de aprendizado contínuo. 📚💻🌱
-                    </p>
-                </div>
-            </div>
+        <div class="about-photo">
+            <img src="sua-foto.jpeg" alt="Amanda Petersen">
+        </div>
+        <div class="about-description">
+            <h1>Amanda Petersen</h1>
+            <p>Desenvolvedora de Software | Análise e Desenvolvimento de Sistemas</p>
+            <p>Sou uma profissional versátil, com experiência em suporte técnico, administração empresarial e projetos pessoais de desenvolvimento de software. Estudante no último período de Análise e Desenvolvimento de Sistemas, possuo conhecimentos em desenvolvimento Back-End e Front-End. 📚💻🌱</p>
         </div>
     </header>
 
     <!-- Experiência Profissional -->
-    <section id="experience" class="experience">
+    <section id="experience">
         <h2>Experiência Profissional</h2>
         <div class="experience-card">
             <h3>Administrativo | TLSV Engenharia</h3>
@@ -191,15 +128,14 @@
         </div>
     </section>
 
-<!-- Habilidades -->
-<section id="skills" class="skills">
-    <h2>Habilidades</h2>
-    <div class="skills">
-        <!-- Habilidades Técnicas -->
-        <div class="skill-box">
-            <h3>Habilidades Técnicas</h3>
-            <ul>
-                <li><i class="fa-solid fa-code"></i> Programação em Python</li>
+    <!-- Habilidades -->
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills">
+            <div class="skill-box">
+                <h3>Habilidades Técnicas</h3>
+                <ul>
+                    <li><i class="fa-solid fa-code"></i> Programação em Python</li>
                 <li><i class="fa-brands fa-php"></i> Programação em PHP</li>
                 <li><i class="fa-solid fa-database"></i> Bancos de Dados Relacionais: PostgreSQL</li>
                 <li><i class="fa-brands fa-html5"></i> HTML5, CSS3 e JavaScript</li>
@@ -209,14 +145,12 @@
                 <li><i class="fa-brands fa-aws"></i> Familiaridade com AWS e Google Cloud</li>
                 <li><i class="fa-solid fa-clipboard-list"></i> Metodologias Ágeis (Scrum e Kanban)</li>
                 <li><i class="fa-solid fa-laptop"></i> Pacote Office nível intermediário</li>
-            </ul>
-        </div>
-
-        <!-- Habilidades Comportamentais -->
-        <div class="skill-box">
-            <h3>Habilidades Comportamentais</h3>
-            <ul class="behavioral-skills">
-                <li>Compromisso com aprendizado contínuo e inovação.</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Habilidades Comportamentais</h3>
+                <ul>
+                    <li>Compromisso com aprendizado contínuo e inovação.</li>
                 <li>Facilidade para trabalhar em equipe e enfrentar desafios com visão estratégica.</li>
                 <li>Capacidade de desenvolver soluções práticas e eficientes, alinhadas aos objetivos organizacionais.</li>
                 <li>Organização e planejamento de processos.</li>
@@ -224,13 +158,13 @@
                 <li>Gestão do tempo e priorização de tarefas.</li>
                 <li>Resiliência e capacidade de lidar com pressão.</li>
                 <li>Foco em resultados e alcance de metas.</li>
-            </ul>
+                </ul>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Contato -->
-    <section id="contact" class="contact">
+    <section id="contact">
         <h2>Contato</h2>
         <p>Email: <a href="mailto:amanda.lettycia.alves@hotmail.com">amanda.lettycia.alves@hotmail.com</a></p>
         <p>Telefone: <a href="tel:+5541997260983">(41) 99726-0983</a></p>
