@@ -126,12 +126,6 @@ header {
     color: #f08dac; /* Cor rosa */
 }
 
-/* Caso sejam textos dentro da descrição e não títulos */
-.experience-card p, 
-.skill-box p {
-    color: #f08dac; /* Cor rosa */
-}
-
 /* Habilidades */
 h2 {
     color: #fff;
