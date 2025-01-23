@@ -80,22 +80,21 @@ header {
     margin-right: 20px;
 }
 
-.contact i {
-    color: #f08dac;
-    margin-right: 10px;
-    font-size: 1.5em;
+.contact h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
 
 #contato {
     text-align: center;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .contact-icons a {
     color: #f08dac;
+    font-size: 2rem;
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 1.8rem;
 }
 
 /* Centralizando os Contatos */
@@ -103,7 +102,6 @@ header {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
 }
 
 /* Habilidades */
