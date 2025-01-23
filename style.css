@@ -45,9 +45,14 @@ header {
 
 /* Descrição */
 .about-description {
-    text-align: justify;
-    margin-top: 20px; /* Deixar igual a experiência */
-    margin-bottom: 20px; /* Margem inferior igual */
+    text-align: left; /* Garante que o texto dentro da descrição não será afetado */
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+.about-description .title {
+    text-align: center; /* Centraliza apenas o título */
+    margin: 0; /* Remove margens extras do título */
+    color: #fff; /* Define a cor do título, ajuste se necessário */
 }
 
 /* Texto do cabeçalho */
