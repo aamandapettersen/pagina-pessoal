@@ -21,7 +21,6 @@ header {
     display: flex;
     align-items: center;
     padding: 20px;
-    margin: 0; /* Remover margens */
 }
 
 /* Contêiner Flexível para Foto e Descrição */
@@ -30,13 +29,13 @@ header {
     flex-direction: column; /* Alinha os itens na coluna */
     align-items: center; /* Centraliza o conteúdo */
     gap: 20px; /* Espaço entre os itens */
-    margin: 0; /* Remover margens */
+    margin: 20px;
 }
 
 /* Foto */
 .about-photo img {
-    width: 350px;
-    height: 350px;
+    width: 150px;
+    height: 150px;
     border-radius: 10%;
     border: 5px solid #fff; /* Borda branca */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Sombra leve */
@@ -47,13 +46,8 @@ header {
 /* Descrição */
 .about-description {
     width: 60%;
-    text-align: center;
-    margin-top: 30px; /* Adiciona uma margem superior para separar da foto */
+    text-align: justify;
 }
-.about-description h1 {
-    color: #fff;
-    font-size: 2rem; /* Tamanho maior para o título */
-    margin-bottom: 20px; /* Espaçamento entre o título e a caixinha */
 
 /* Texto do cabeçalho */
 .header-text h1 {
@@ -70,9 +64,7 @@ header {
     background-color: #3b2040;
     padding: 20px;
     border-radius: 10px;
-    max-width: 800px; /* Limita a largura da caixinha */
-    margin: 0 auto; /* Centraliza a caixinha na página */
-    text-align: left; /* Mantém o texto dentro da caixinha alinhado à esquerda */
+    margin-top: 20px;
 }
 
 .about-me {
@@ -88,7 +80,6 @@ header {
     align-items: flex-start; /* Alinha à esquerda */
     margin-top: 20px;
     width: 100%;
-    margin: 0; /* Remover margens */
 }
 
 .contact h2 {
