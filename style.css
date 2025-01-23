@@ -140,6 +140,20 @@ h1, h2 {
     line-height: 1.6;
     color: #ffffff; /* Texto em branco */
 }
+/* Estilo dos Ícones nas Habilidades Técnicas */
+.technical-skills li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.technical-skills li i {
+    color: #ff6392; /* Cor rosa para os ícones */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+    font-size: 1.2rem; /* Ajusta o tamanho do ícone */
+}
 /* Estilo para Habilidades Comportamentais */
 .behavioral-skills {
     list-style-type: none; /* Remove o marcador padrão */
