@@ -47,9 +47,13 @@ header {
 /* Descrição */
 .about-description {
     width: 60%;
-    text-align: justify;
-    margin: 0; /* Remover margens */
+    text-align: center;
+    margin-top: 30px; /* Adiciona uma margem superior para separar da foto */
 }
+.about-description h1 {
+    color: #fff;
+    font-size: 2rem; /* Tamanho maior para o título */
+    margin-bottom: 20px; /* Espaçamento entre o título e a caixinha */
 
 /* Texto do cabeçalho */
 .header-text h1 {
@@ -66,7 +70,9 @@ header {
     background-color: #3b2040;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
+    max-width: 800px; /* Limita a largura da caixinha */
+    margin: 0 auto; /* Centraliza a caixinha na página */
+    text-align: left; /* Mantém o texto dentro da caixinha alinhado à esquerda */
 }
 
 .about-me {
