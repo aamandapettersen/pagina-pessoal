@@ -29,6 +29,58 @@ section, header {
 section {
     text-align: justify;
 }
+/* Configuração das seções */
+section {
+    height: 100vh; /* Cada seção ocupa 100% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #261329; /* Cor de fundo global */
+    color: #ffffff;
+}
+
+/* Diferenciar as cores de cada seção (opcional) */
+#sobre-mim {
+    background-color: #3d2147;
+}
+
+#experiencias {
+    background-color: #261329;
+}
+
+#habilidades {
+    background-color: #4b2a5d;
+}
+
+#contato {
+    background-color: #3d2147;
+}
+
+/* Links de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #261329;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff6392; /* Rosa */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
 
 /* Ajustes no Cabeçalho */
 header {
