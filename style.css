@@ -45,8 +45,9 @@ header {
 
 /* Descrição */
 .about-description {
-    width: 60%;
     text-align: justify;
+    margin-top: 20px; /* Deixar igual a experiência */
+    margin-bottom: 20px; /* Margem inferior igual */
 }
 
 /* Texto do cabeçalho */
