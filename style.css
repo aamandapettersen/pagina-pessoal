@@ -35,8 +35,10 @@ header {
 .about-photo img {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 10%;
     border: 5px solid #f08dac; /* Borda da foto */
+    border: 5px solid #fff; /* Borda branca */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Sombra leve */
     margin-right: 20px;
 }
 
