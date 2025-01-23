@@ -13,6 +13,7 @@ section {
     scroll-snap-align: start;
     min-height: 100vh;
     padding: 20px;
+    margin-bottom: 50px; /* Adicionando espaçamento entre seções */
 }
 
 /* Cabeçalho */
@@ -67,6 +68,14 @@ header {
     color: #f08dac;
     margin-right: 10px;
     font-size: 1.5em;
+}
+
+/* Centralizando os Contatos */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 /* Habilidades */
