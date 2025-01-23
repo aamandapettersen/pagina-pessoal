@@ -39,9 +39,9 @@ header {
 }
 
 .foto-grande {
-    width: 300px; /* Define o tamanho da largura */
-    height: 300px; /* Define o tamanho da altura igual à largura */
-    border-radius: 8px; /* Bordas levemente arredondadas */
+    width: 600px; /* Define o tamanho da largura */
+    height: 600px; /* Define o tamanho da altura igual à largura */
+    border-radius: 0px; /* Bordas levemente arredondadas */
     object-fit: cover; /* Ajusta a imagem para preencher o quadrado sem distorção */
     margin-bottom: 20px; /* Espaço inferior para separar a foto do texto */
 }
