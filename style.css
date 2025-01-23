@@ -237,6 +237,22 @@ h1, h2 {
         font-size: 0.8rem; /* Texto menor no rodapé */
         padding: 10px; /* Reduz espaço no rodapé */
     }
+/* Garantir que as datas na experiência não fiquem azuis */
+    .experience-card a {
+    color: inherit; /* Herda a cor do texto, para não ficar azul */
+    text-decoration: none; /* Remove sublinhado de links, caso tenha */
+}
+
+/* Garantir que as datas não fiquem azul */
+    .experience-card p {
+    color: #fff; /* Defina a cor do texto para branco ou a que preferir */
+}
+/* Remover a cor azul de links dentro das experiências */
+    .experience-card a {
+    color: inherit;
+    text-decoration: none;
+}
+
 }
 /* Rodapé */
 footer {
