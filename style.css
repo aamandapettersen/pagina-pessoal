@@ -28,14 +28,14 @@ header {
     display: flex;
     flex-direction: column; /* Alinha os itens na coluna */
     align-items: center; /* Centraliza o conteúdo */
-    gap: 10px; /* Espaço entre os itens */
-    margin: 10px;
+    gap: 05px; /* Espaço entre os itens */
+    margin: 05px;
 }
 
 /* Foto */
 .about-photo img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 10%;
     border: 5px solid #fff; /* Borda branca */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Sombra leve */
