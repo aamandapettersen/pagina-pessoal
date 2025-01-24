@@ -41,7 +41,7 @@ header {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Sombra leve */
     margin-right: 20px;
     margin-left: 40px; /* Adiciona margem à esquerda para mover a foto para a direita */
-    margin-bottom: 20px; /* Espaçamento entre a foto e o título */
+    margin-bottom: 10px; /* Espaçamento entre a foto e o título */
 }
 
 /* Descrição */
@@ -74,7 +74,7 @@ header {
     background-color: #3b2040;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .about-me {
