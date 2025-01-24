@@ -190,10 +190,21 @@ ul {
 
 /* Habilidades Comportamentais */
 .soft-skills ul {
-    list-style-type: disc;  /* Adiciona marcadores à lista de habilidades comportamentais */
-    padding-left: 20px;     /* Adiciona um recuo à esquerda para o marcador */
-    font-size: 1rem;        /* Ajusta o tamanho da fonte para habilidades comportamentais */
-    line-height: 1.4;       /* Ajusta o espaçamento entre as linhas das habilidades comportamentais */
+    list-style-type: disc;  /* Adicionando o marcador */
+    padding-left: 20px;     /* Adicionando o recuo para os marcadores */
+    margin: 0;              /* Remover margens extras */
+}
+
+.soft-skills li {
+    font-size: 1rem;        /* Ajustando o tamanho da fonte */
+    margin-bottom: 10px;    /* Ajustando o espaçamento entre os itens */
+    color: #fff;            /* Cor do texto */
+}
+
+/* Habilidades Técnicas (para referência) */
+.skill-box ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 /* Rodapé */
