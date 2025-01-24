@@ -34,8 +34,8 @@ header {
 
 /* Foto */
 .about-photo img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 10%;
     border: 5px solid #fff; /* Borda branca */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Sombra leve */
