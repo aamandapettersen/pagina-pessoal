@@ -157,15 +157,15 @@ h2 {
     background-color: #3b2040;
     padding: 15px;
     border-radius: 10px;
-    margin-top: 20px; /* Garante que a margem superior entre habilidades e experiência seja a mesma */
+    margin-top: 20px; 
     margin-bottom: 20px;
 }
 
 .skill-box h3 {
     color: #fff;
     margin-bottom: 15px;
-    font-size: 1.2rem; /* Ajusta o tamanho da fonte das habilidades técnicas */
-    line-height: 1.6;  /* Ajusta o espaçamento entre as linhas das habilidades técnicas */
+    font-size: 1.2rem; /* Ajuste o tamanho da fonte das habilidades técnicas */
+    line-height: 1.6;
 }
 
 /* Itens das habilidades técnicas */
@@ -173,19 +173,14 @@ h2 {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    font-size: 1.1rem;  /* Ajusta o tamanho da fonte para os itens das habilidades técnicas */
-    line-height: 1.5;   /* Ajusta o espaçamento entre as linhas dos itens */
+    font-size: 1.1rem;  /* Ajuste o tamanho da fonte */
+    line-height: 1.5;
 }
 
 .skill-item i {
     margin-right: 10px;
-    color: #f08dac;/* Ajuste a cor dos ícones conforme necessário */
+    color: #f08dac;
     font-size: 1.5em;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
 }
 
 /* Habilidades Comportamentais */
@@ -202,6 +197,7 @@ ul {
     color: #fff;            /* Cor do texto */
     line-height: 1.5;       /* Ajustando o espaçamento entre as linhas */
 }
+
 
 /* Rodapé */
 footer {
