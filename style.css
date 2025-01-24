@@ -218,6 +218,21 @@ h2 {
     text-decoration: none; /* Remove sublinhados de links */
 }
 
+/* Redefine todos os links para datas */
+a, a:link, a:visited {
+    color: #fff !important; /* Força o branco */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Se precisar ser mais específico */
+.experience-card .date a, 
+.experience-card .date a:link, 
+.experience-card .date a:visited {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+
 /* Rodapé */
 footer {
     text-align: center;
