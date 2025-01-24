@@ -28,8 +28,8 @@ header {
     display: flex;
     flex-direction: column; /* Alinha os itens na coluna */
     align-items: center; /* Centraliza o conteúdo */
-    gap: 05px; /* Espaço entre os itens */
-    margin: 05px;
+    gap: 20px; /* Espaço entre os itens */
+    margin: 20px;
 }
 
 /* Foto */
@@ -41,6 +41,7 @@ header {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Sombra leve */
     margin-right: 20px;
     margin-left: 40px; /* Adiciona margem à esquerda para mover a foto para a direita */
+    margin-bottom: 20px; /* Espaçamento entre a foto e o título */
 }
 
 /* Descrição */
