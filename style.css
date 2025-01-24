@@ -164,17 +164,22 @@ h2 {
 .skill-box h3 {
     color: #fff;
     margin-bottom: 15px;
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte das habilidades técnicas */
+    line-height: 1.6;  /* Ajusta o espaçamento entre as linhas das habilidades técnicas */
 }
 
+/* Itens das habilidades técnicas */
 .skill-item {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    font-size: 1.1rem;  /* Ajusta o tamanho da fonte para os itens das habilidades técnicas */
+    line-height: 1.5;   /* Ajusta o espaçamento entre as linhas dos itens */
 }
 
 .skill-item i {
     margin-right: 10px;
-    color: #f08dac;
+    color: #f08dac;/* Ajuste a cor dos ícones conforme necessário */
     font-size: 1.5em;
 }
 
@@ -185,8 +190,10 @@ ul {
 
 /* Habilidades Comportamentais */
 .soft-skills ul {
-    list-style-type: none;
-    padding-left: 0;
+    list-style-type: disc;  /* Adiciona marcadores à lista de habilidades comportamentais */
+    padding-left: 20px;     /* Adiciona um recuo à esquerda para o marcador */
+    font-size: 1rem;        /* Ajusta o tamanho da fonte para habilidades comportamentais */
+    line-height: 1.4;       /* Ajusta o espaçamento entre as linhas das habilidades comportamentais */
 }
 
 /* Rodapé */
