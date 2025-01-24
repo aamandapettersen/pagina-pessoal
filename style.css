@@ -157,13 +157,13 @@ h2 {
     background-color: #3b2040;
     padding: 15px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .skill-box h3 {
     color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 1.2rem; /* Tamanho da fonte das habilidades técnicas */
     line-height: 1.6;
 }
@@ -172,7 +172,7 @@ h2 {
 .skill-item {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 1.1rem; /* Tamanho da fonte */
     line-height: 1.5;  /* Espaçamento entre as linhas */
 }
