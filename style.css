@@ -199,6 +199,14 @@ h2 {
     color: #fff;            /* Cor do texto */
 }
 
+/* Garantir que o tamanho e espaçamento sejam os mesmos */
+.soft-skills h3 {
+    color: #fff;
+    font-size: 1.2rem;  /* Mesmo tamanho de fonte das habilidades técnicas */
+    line-height: 1.6;   /* Mesmo espaçamento entre as linhas */
+}
+
+
 /* Rodapé */
 footer {
     text-align: center;
