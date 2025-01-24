@@ -144,6 +144,20 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Reduz o espaçamento entre seções */
+section {
+    margin-bottom: 40px; /* Reduza este valor conforme necessário */
+}
+
+/* Específico para Experiência e Habilidades */
+#experience {
+    margin-bottom: 20px; /* Ajusta a margem inferior da seção de experiência */
+}
+
+#skills {
+    margin-top: 20px; /* Ajusta a margem superior da seção de habilidades */
+}
+
 /* Habilidades Técnicas */
 .skills {
     display: flex;
