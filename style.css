@@ -34,8 +34,8 @@ header {
 
 /* Foto */
 .about-photo img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 10%;
     border: 5px solid #fff; /* Borda branca */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Sombra leve */
@@ -50,7 +50,7 @@ header {
     flex-direction: column;
     align-items: center;  /* Garante que o conteúdo da seção ficará centralizado */
     text-align: center;   /* Centraliza o texto */
-    margin-top: 10px;     /* Ajuste a margem superior conforme necessário */
+    margin-top: 5px;     /* Ajuste a margem superior conforme necessário */
 }
 
 .about-description .title {
