@@ -12,7 +12,8 @@ body {
 section {
     scroll-snap-align: start;
     min-height: 100vh;
-    padding: 10px;
+    padding: 20px;
+    margin: 0; /* Remove margens extras */
     margin-bottom: 20px; /* Reduzindo o espaçamento entre as seções */
 }
 
@@ -160,6 +161,7 @@ section {
 
 #skills {
     margin-top: 0px; /* Ajusta a margem superior da seção de habilidades */
+    padding-top: 10px;
 }
 
 /* Habilidades Técnicas */
