@@ -206,13 +206,17 @@ h2 {
     line-height: 1.6;   /* Mesmo espaçamento entre as linhas */
 }
 
-/* Estilo para deixar as datas em branco no celular */
-@media (max-width: 768px) {
-    .experience-card .date {
-        color: #fff; /* Altera a cor das datas para branco */
-    }
+/* Garante que as datas fiquem brancas e sem qualquer estilo de link */
+.experience-card .date {
+    color: #fff !important; /* Força a cor branca */
+    text-decoration: none; /* Remove o sublinhado, se houver */
 }
 
+/* Se for link, remova o estilo padrão */
+.experience-card .date a {
+    color: #fff !important; /* Força a cor branca em links */
+    text-decoration: none; /* Remove sublinhados de links */
+}
 
 /* Rodapé */
 footer {
