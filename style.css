@@ -188,8 +188,8 @@ h2 {
     list-style-type: disc;  /* Adicionando o marcador */
     padding-left: 20px;     /* Adicionando o recuo para os marcadores */
     margin: 0;              /* Remover margens extras */
-    font-size: 1.1rem;      /* Garantindo que o tamanho da fonte das habilidades comportamentais seja igual */
-    line-height: 1.5;       /* Garantindo o mesmo espaçamento entre as linhas */
+    font-size: 1.5rem;      /* Garantindo que o tamanho da fonte das habilidades comportamentais seja igual */
+    line-height: 1.6;       /* Garantindo o mesmo espaçamento entre as linhas */
 }
 
 /* Itens das habilidades comportamentais */
