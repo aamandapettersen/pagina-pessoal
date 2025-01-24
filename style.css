@@ -12,7 +12,7 @@ body {
 section {
     scroll-snap-align: start;
     min-height: 100vh;
-    padding: 20px 06;
+    padding: 10px 06;
     margin-bottom: 10px; /* Reduzindo o espaçamento entre as seções */
 }
 
