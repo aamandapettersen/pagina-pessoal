@@ -188,14 +188,14 @@ h2 {
     list-style-type: disc;  /* Adicionando o marcador */
     padding-left: 20px;     /* Adicionando o recuo para os marcadores */
     margin: 0;              /* Remover margens extras */
+    font-size: 1.1rem;      /* Garantindo que o tamanho da fonte das habilidades comportamentais seja igual */
+    line-height: 1.5;       /* Garantindo o mesmo espaçamento entre as linhas */
 }
 
 /* Itens das habilidades comportamentais */
 .soft-skills li {
-    font-size: 1.1rem;      /* Ajustando o tamanho da fonte para as habilidades comportamentais */
     margin-bottom: 10px;    /* Ajustando o espaçamento entre os itens */
     color: #fff;            /* Cor do texto */
-    line-height: 1.5;       /* Ajustando o espaçamento entre as linhas */
 }
 
 
