@@ -140,7 +140,7 @@ h2 {
 .skill-box {
     background-color: #3b2040;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 10px;
 }
 
@@ -169,7 +169,7 @@ section {
 .skill-box {
     flex: 1;
     background-color: #3b2040;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
